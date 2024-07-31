@@ -45,7 +45,6 @@ fn main() {
 
 
         for point in line {
-            println!("{:?}", point);
             canvas.put_pixel(point.x as u32, point.y as u32, im::Rgba([point.color.r, point.color.g, point.color.b, point.color.a]))
         }
     }
